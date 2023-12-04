@@ -1,4 +1,4 @@
-const multipleNavigate = require("../multipleNavigate");
+const multipleNavigate = require("../packages/multipleNavigate");
 
 describe("multipleNavigate", () => {
 	describe("To bottom", () => {
@@ -11,7 +11,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 0,
 				nextActivePosition: 2,
 				positionLists: leftPositionLists,
-				slideSide: "left",
+				slideSide: "left"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newLeftPositionLists);
@@ -26,7 +26,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 0,
 				nextActivePosition: 2,
 				positionLists: leftPositionLists,
-				slideSide: "right",
+				slideSide: "right"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newRightPositionLists);
@@ -41,7 +41,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 3,
 				nextActivePosition: 7,
 				positionLists: leftPositionLists,
-				slideSide: "left",
+				slideSide: "left"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newLeftPositionLists);
@@ -56,7 +56,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 3,
 				nextActivePosition: 7,
 				positionLists: leftPositionLists,
-				slideSide: "right",
+				slideSide: "right"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newRightPositionLists);
@@ -71,7 +71,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 7,
 				nextActivePosition: leftPositionLists.length - 1,
 				positionLists: leftPositionLists,
-				slideSide: "left",
+				slideSide: "left"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newLeftPositionLists);
@@ -86,7 +86,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 7,
 				nextActivePosition: leftPositionLists.length - 1,
 				positionLists: leftPositionLists,
-				slideSide: "right",
+				slideSide: "right"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newRightPositionLists);
@@ -103,7 +103,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: leftPositionLists.length - 1,
 				nextActivePosition: 7,
 				positionLists: leftPositionLists,
-				slideSide: "left",
+				slideSide: "left"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newLeftPositionLists);
@@ -118,7 +118,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: leftPositionLists.length - 1,
 				nextActivePosition: 7,
 				positionLists: leftPositionLists,
-				slideSide: "right",
+				slideSide: "right"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newRightPositionLists);
@@ -133,7 +133,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 7,
 				nextActivePosition: 3,
 				positionLists: leftPositionLists,
-				slideSide: "left",
+				slideSide: "left"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newLeftPositionLists);
@@ -148,7 +148,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 7,
 				nextActivePosition: 3,
 				positionLists: leftPositionLists,
-				slideSide: "right",
+				slideSide: "right"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newRightPositionLists);
@@ -163,7 +163,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 3,
 				nextActivePosition: 0,
 				positionLists: leftPositionLists,
-				slideSide: "left",
+				slideSide: "left"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newLeftPositionLists);
@@ -178,7 +178,7 @@ describe("multipleNavigate", () => {
 				currentActivePosition: 3,
 				nextActivePosition: 0,
 				positionLists: leftPositionLists,
-				slideSide: "right",
+				slideSide: "right"
 			};
 
 			expect(multipleNavigate(payload)).toEqual(newRightPositionLists);

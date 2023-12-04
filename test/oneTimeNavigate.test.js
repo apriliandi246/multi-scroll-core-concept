@@ -1,4 +1,4 @@
-const oneTimeNavigate = require("../oneTimeNavigate");
+const oneTimeNavigate = require("../packages/oneTimeNavigate");
 
 describe("oneTimeNavigate", () => {
 	describe("To bottom", () => {
